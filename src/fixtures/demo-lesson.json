@@ -1,0 +1,232 @@
+{
+  "id": "demo-2026-10-25",
+  "mode": "demo",
+  "generatedAt": "2026-10-25T20:00:00-04:00",
+  "title": "When AI demand meets the grid",
+  "intro": "Data centers are reshaping both credit markets and power grids. Today: how lenders decide whether a project can carry its debt, and how thousands of homes can act like one power plant.",
+  "estimatedMinutes": 9,
+  "sources": [
+    {
+      "id": "cnbc-hsbc-data-centers",
+      "title": "HSBC CEO warns the AI boom won’t make every data center a good bet",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/20/data-center-financing-ai-debt-hsbc.html",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "id": "utilitydive-nextera-hubs",
+      "title": "NextEra Energy secures $5.7B to support federal energy ‘hub’ projects",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/nextera-energy-secures-57b-to-support-federal-energy-hub-projects/833810/",
+      "publishedAt": "2026-10-23"
+    },
+    {
+      "id": "cnbc-big-three-trading",
+      "title": "Goldman Sachs, JPMorgan and Morgan Stanley are dominating the AI stock boom. Here’s their edge",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/10/21/goldman-sachs-jpmorgan-morgan-stanley-ai-trading.html",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "id": "canary-google-vpp-pjm",
+      "title": "Google plans big virtual power plant in energy-strapped PJM grid",
+      "publisher": "Canary Media",
+      "url": "https://www.canarymedia.com/articles/virtual-power-plants/google-plans-big-virtual-power-plant-in-energy-strapped-pjm-grid",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "id": "eia-peak-load-records",
+      "title": "PJM, ERCOT, and SWPP all set peak load records this summer",
+      "publisher": "U.S. EIA",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "eia-refinery-utilization",
+      "title": "U.S. refineries have been running at very high rates in 2026",
+      "publisher": "U.S. EIA",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68344",
+      "publishedAt": "2026-10-22"
+    }
+  ],
+  "finance": {
+    "domain": "finance",
+    "news": [
+      {
+        "headline": "Not every data center is a good loan",
+        "fact": "HSBC’s CEO warned that the AI boom won’t make every data center a good bet, CNBC reported.",
+        "soWhat": "The lender’s question is shifting from “is AI growing?” to “can this specific building’s cash flow carry this specific loan?”",
+        "sourceIds": [
+          "cnbc-hsbc-data-centers"
+        ]
+      },
+      {
+        "headline": "NextEra lines up $5.7B for federal energy hubs",
+        "fact": "NextEra Energy secured $5.7 billion to support federal energy ‘hub’ projects, and said it remains on track to close its merger with Dominion Energy in the second half of 2027 despite political opposition in Virginia (Utility Dive).",
+        "soWhat": "Big, long-lived energy assets get financed against predictable cash flows — exactly where lenders’ coverage tests decide how much can be borrowed.",
+        "sourceIds": [
+          "utilitydive-nextera-hubs"
+        ]
+      },
+      {
+        "headline": "Wall Street’s big three dominate equity trading",
+        "fact": "Goldman Sachs, JPMorgan and Morgan Stanley have generated $52 billion in equity trading revenue this year, capturing about 80% of the market, helped by rising margin lending to hedge funds (CNBC).",
+        "soWhat": "Margin lending is borrowing against assets. Like any lender, banks protect themselves by sizing loans to what the collateral and cash can cover.",
+        "sourceIds": [
+          "cnbc-big-three-trading"
+        ]
+      }
+    ],
+    "concept": {
+      "conceptId": "debt-service-coverage-ratio",
+      "conceptName": "Debt service coverage ratio (DSCR)",
+      "hook": "Lenders don’t first ask “is this a good business?” They ask “how many times over can its cash pay the loan?”",
+      "intuition": "DSCR = cash flow available for debt service ÷ required debt payments (interest + principal) for the same period. At 1.0x, every dollar of cash goes to the lender with zero cushion. Project lenders size loans so DSCR stays meaningfully above 1.0x even in a bad year — that cushion absorbs lower output, lower prices or higher costs. It’s why contracted revenue (think PPAs and take-or-pay, which you already know) lets a project borrow more: steadier cash flow needs less cushion.",
+      "example": "Illustrative numbers, not from the news: a data center campus expects $120M a year of cash available for debt service, and its loan payments are $80M a year. DSCR = 120 ÷ 80 = 1.5x. If a tenant leaves and cash falls 25% to $90M, DSCR drops to 1.125x — still paying, but most of the cushion is gone. A lender worried that “not every data center is a good bet” either lends less up front (smaller payments) or insists on long-term tenant contracts."
+    },
+    "quiz": {
+      "id": "demo-2026-10-25-finance",
+      "conceptId": "debt-service-coverage-ratio",
+      "questions": [
+        {
+          "id": "dscr-q1",
+          "prompt": "A project has $50M of annual cash flow available for debt service and $40M of annual debt payments. What is its DSCR?",
+          "choices": [
+            "0.8x",
+            "1.25x",
+            "1.5x",
+            "2.0x"
+          ],
+          "answerIndex": 1,
+          "explanation": "DSCR = 50 ÷ 40 = 1.25x. The project covers its debt payments 1.25 times over."
+        },
+        {
+          "id": "dscr-q2",
+          "prompt": "Which event most directly lowers a data center’s DSCR?",
+          "choices": [
+            "Signing a 15-year lease with a creditworthy tenant",
+            "Refinancing at a lower interest rate",
+            "A major tenant leaving before its lease ends",
+            "Building a backup substation"
+          ],
+          "answerIndex": 2,
+          "explanation": "Losing a tenant cuts cash flow (the numerator) while debt payments stay the same, so coverage falls. Cheaper refinancing would raise DSCR."
+        },
+        {
+          "id": "dscr-q3",
+          "prompt": "Why can a data center with long-term contracts from big tech tenants usually borrow more than an identical one leased month-to-month?",
+          "choices": [
+            "Lenders don’t look at contracts",
+            "Steadier, more predictable cash flow means lenders need less DSCR cushion",
+            "Contracts increase the building’s capacity factor",
+            "Month-to-month buildings can’t legally take on debt"
+          ],
+          "answerIndex": 1,
+          "explanation": "Predictable cash flow lowers the chance DSCR falls below 1.0x, so lenders accept a thinner cushion — which means a bigger loan."
+        }
+      ]
+    },
+    "reviewQuestion": {
+      "id": "dscr-rv1",
+      "prompt": "A wind farm’s DSCR is 1.1x. A lender’s covenant requires at least 1.2x. What does the gap tell you?",
+      "choices": [
+        "The project can’t pay any of its debt",
+        "Cash flow covers debt payments, but with less cushion than the lender requires",
+        "The project is overleveraged on equity",
+        "Its capacity factor is 110%"
+      ],
+      "answerIndex": 1,
+      "explanation": "At 1.1x the project still covers its payments, but the cushion is thinner than the 1.2x covenant — typically triggering restrictions like blocked dividends."
+    }
+  },
+  "energy": {
+    "domain": "energy",
+    "news": [
+      {
+        "headline": "Google targets a gigawatt-scale VPP in PJM",
+        "fact": "Google and California-based Voltus announced they are going after a gigawatt of virtual-power-plant capacity in PJM Interconnection, using the flexible energy use of thousands of homes and businesses to free up grid space for data centers (Canary Media).",
+        "soWhat": "Instead of waiting years for new plants and wires, a data-center owner is trying to buy flexibility from existing customers.",
+        "sourceIds": [
+          "canary-google-vpp-pjm"
+        ]
+      },
+      {
+        "headline": "Three big grids set summer peak records",
+        "fact": "PJM, ERCOT and SWPP each set records for peak hourly load this past summer, according to Form EIA-930 data reported by the U.S. Energy Information Administration.",
+        "soWhat": "Grids are built for the single hottest hour, not the average one — so anything that shaves the peak is worth a lot.",
+        "sourceIds": [
+          "eia-peak-load-records"
+        ]
+      },
+      {
+        "headline": "U.S. refineries are running near flat-out",
+        "fact": "U.S. refinery utilization averaged more than 95% of capacity from May through September 2026 — the highest for those months since 1998 — as tight global product supplies boosted margins, especially for diesel (EIA).",
+        "soWhat": "When a system runs near 100%, there’s little slack: one large outage can move prices more than usual. Same logic as a grid at peak.",
+        "sourceIds": [
+          "eia-refinery-utilization"
+        ]
+      }
+    ],
+    "concept": {
+      "conceptId": "virtual-power-plants",
+      "conceptName": "Virtual power plants (VPPs)",
+      "hook": "A power plant made of thousands of thermostats, batteries and EV chargers — coordinated by software.",
+      "intuition": "A VPP aggregates many small, distributed resources — smart thermostats, home batteries, EV chargers, flexible commercial loads — and dispatches them together. When the grid is stressed, the VPP cuts demand or discharges stored energy, which to the grid operator looks a lot like turning on a peaker plant. Most of these devices are behind the meter (a concept you know). The value is peak capacity: if a few hours of reliable peak reduction is available, the grid needs fewer new plants and wires. The catch is reliability — the operator must trust that thousands of independent devices will actually respond when called.",
+      "example": "Illustrative numbers: 10,000 homes each agree to cut 1.5 kW during peak events by pre-cooling, pausing water heaters and delaying EV charging. That’s 15 MW of peak reduction — roughly a small peaker’s worth of capacity. In MW-vs-MWh terms, a 4-hour event avoids about 60 MWh. On a grid like PJM, freeing those megawatts at the peak is what makes room for new load like data centers."
+    },
+    "quiz": {
+      "id": "demo-2026-10-25-energy",
+      "conceptId": "virtual-power-plants",
+      "questions": [
+        {
+          "id": "vpp-q1",
+          "prompt": "What makes a virtual power plant “virtual”?",
+          "choices": [
+            "It only exists in grid simulations",
+            "Software coordinates many small distributed resources instead of one physical plant",
+            "It sells power only in futures markets",
+            "It runs exclusively on rooftop solar"
+          ],
+          "answerIndex": 1,
+          "explanation": "A VPP is an aggregation: many devices, one dispatchable resource, coordinated by software."
+        },
+        {
+          "id": "vpp-q2",
+          "prompt": "Why is a VPP most valuable during peak demand hours?",
+          "choices": [
+            "Electricity is cheapest at peak",
+            "Grids must have capacity for the highest-demand hours, so cutting the peak avoids building capacity",
+            "VPP devices only work at night",
+            "Peak hours have the lowest emissions"
+          ],
+          "answerIndex": 1,
+          "explanation": "Capacity is sized to the peak. Reliable peak reduction substitutes for plants and wires that would otherwise sit idle most of the year."
+        },
+        {
+          "id": "vpp-q3",
+          "prompt": "5,000 homes each reduce demand by 2 kW during a 3-hour event. How much peak capacity does the VPP provide?",
+          "choices": [
+            "2 MW",
+            "10 MW",
+            "30 MW",
+            "10 MWh"
+          ],
+          "answerIndex": 1,
+          "explanation": "5,000 × 2 kW = 10,000 kW = 10 MW of capacity (power). The energy avoided over 3 hours would be 30 MWh."
+        }
+      ]
+    },
+    "reviewQuestion": {
+      "id": "vpp-rv1",
+      "prompt": "A utility pays a VPP aggregator to have 20 MW available during summer peaks. What is the utility mainly buying?",
+      "choices": [
+        "Energy (MWh) for baseload",
+        "Reliable peak capacity it doesn’t have to build",
+        "Transmission rights",
+        "Renewable energy certificates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The value is capacity at the peak: 20 MW that can be called on when demand is highest, instead of building a peaker plant."
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "pricing": {
+    "model": "gpt-6-luna",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "retrieved": "2026-10-25",
+    "tier": "Standard",
+    "perMillion": {
+      "input": 0.1,
+      "cachedInput": 0.01,
+      "output": 0.5
+    }
+  },
+  "realRuns": 11,
+  "runLabels": [
+    "bench 1",
+    "bench 2",
+    "bench 3",
+    "cache-experiment-baseline:learner-first:learnerA",
+    "cache-experiment-baseline:learner-first:learnerB",
+    "cache-experiment-baseline:sources-first:learnerA",
+    "cache-experiment-baseline:sources-first:learnerB",
+    "cache-experiment:shared-block-with-breakpoint:learnerA",
+    "cache-experiment:shared-block-with-breakpoint:learnerB",
+    "redteam:screening_on",
+    "redteam:screening_off"
+  ],
+  "benchmark": "3/3 forced-fresh runs succeeded on the first attempt",
+  "latencySec": {
+    "avg": 24.4,
+    "min": 20.4,
+    "max": 27.3
+  },
+  "avgTokensPerRun": {
+    "input": 4464,
+    "output": 3569,
+    "reasoningInsideOutput": 1458
+  },
+  "outputTokenRange": [
+    2951,
+    3960
+  ],
+  "cachedTokensMeasured": {
+    "instructionsOnly": 1141,
+    "sharedNewsBlock": 3786
+  },
+  "costPerRunUsd": {
+    "noCache": 0.00223,
+    "instructionsCached": 0.00213,
+    "sharedNewsCached": 0.00189
+  },
+  "outputShareOfUncachedCost": 0.8,
+  "perUserPerMonthUsd": {
+    "soloUser": 0.0669,
+    "atScale": 0.0567
+  },
+  "monthlyUsd": {
+    "users1": 0.07,
+    "users100": 5.67,
+    "users10000": 567.05,
+    "oneSharedLessonForEveryone": 0.07
+  },
+  "gatewayReplay": {
+    "note": "Identical request without force-refresh was served from the Portkey cache.",
+    "modelCallMs": [
+      1057
+    ],
+    "gatewayCache": [
+      "HIT"
+    ]
+  },
+  "assumptions": [
+    "One generation per learner per day; refresh/re-open hits the device cache, a second device hits the server cache (0 tokens).",
+    "Review questions are produced with the lesson, so review costs 0 tokens.",
+    "30 active days/month. List price, Standard tier; the course key is billed via Portkey, which we can't see.",
+    "Prompt-cache lifetime is at least 30 minutes; the cached-input price applies only to runs inside that window."
+  ]
+}

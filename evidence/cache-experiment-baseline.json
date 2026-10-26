@@ -1,0 +1,158 @@
+{
+  "ranAt": "2026-10-26T00:32:52.485Z",
+  "note": "Learner B runs right after learner A with identical sources.",
+  "results": {
+    "learner-first": {
+      "learnerA": {
+        "runId": "mvoitwz4zn1t",
+        "startedAt": "2026-10-26T00:31:19.600Z",
+        "result": "ok",
+        "error": null,
+        "model": "gpt-6-luna-global",
+        "totalMs": 20440,
+        "retrievalMs": 0,
+        "feedsOk": 6,
+        "feedsTotal": 6,
+        "itemsKept": 24,
+        "quarantined": 0,
+        "attempts": 1,
+        "attemptErrors": [
+          []
+        ],
+        "modelCallMs": [
+          20429
+        ],
+        "responseIds": [
+          "resp_055dc791d433b9be006ade9f58e9c08197a4354233bd40d509"
+        ],
+        "gatewayCache": [
+          "REFRESH"
+        ],
+        "usage": {
+          "inputTokens": 4427,
+          "cachedInputTokens": 4424,
+          "outputTokens": 2951,
+          "reasoningTokens": 836
+        },
+        "costUsd": 0.00152004,
+        "concepts": {
+          "finance": "ipo-timing",
+          "energy": "dispatchability"
+        }
+      },
+      "learnerB": {
+        "runId": "mvoiucqwj2nc",
+        "startedAt": "2026-10-26T00:31:40.040Z",
+        "result": "ok",
+        "error": null,
+        "model": "gpt-6-luna-global",
+        "totalMs": 26413,
+        "retrievalMs": 0,
+        "feedsOk": 6,
+        "feedsTotal": 6,
+        "itemsKept": 24,
+        "quarantined": 0,
+        "attempts": 1,
+        "attemptErrors": [
+          []
+        ],
+        "modelCallMs": [
+          26411
+        ],
+        "responseIds": [
+          "resp_09dd0483129bb59c006ade9f6c883881958865ac662e781b18"
+        ],
+        "gatewayCache": [
+          "REFRESH"
+        ],
+        "usage": {
+          "inputTokens": 4427,
+          "cachedInputTokens": 1141,
+          "outputTokens": 3639,
+          "reasoningTokens": 1266
+        },
+        "costUsd": 0.0021595100000000003,
+        "concepts": {
+          "finance": "ipo-timing",
+          "energy": "virtual-power-plants"
+        }
+      }
+    },
+    "sources-first": {
+      "learnerA": {
+        "runId": "mvoiux4pj05d",
+        "startedAt": "2026-10-26T00:32:06.457Z",
+        "result": "ok",
+        "error": null,
+        "model": "gpt-6-luna-global",
+        "totalMs": 21921,
+        "retrievalMs": 0,
+        "feedsOk": 6,
+        "feedsTotal": 6,
+        "itemsKept": 24,
+        "quarantined": 0,
+        "attempts": 1,
+        "attemptErrors": [
+          []
+        ],
+        "modelCallMs": [
+          21919
+        ],
+        "responseIds": [
+          "resp_0b222a1c7ca62cfb006ade9f873b9c8190916cc7f3073d519f"
+        ],
+        "gatewayCache": [
+          "REFRESH"
+        ],
+        "usage": {
+          "inputTokens": 4427,
+          "cachedInputTokens": 1141,
+          "outputTokens": 3311,
+          "reasoningTokens": 1160
+        },
+        "costUsd": 0.00199551,
+        "concepts": {
+          "finance": "ipo-timing",
+          "energy": "virtual-power-plants"
+        }
+      },
+      "learnerB": {
+        "runId": "mvoive1mq81r",
+        "startedAt": "2026-10-26T00:32:28.378Z",
+        "result": "ok",
+        "error": null,
+        "model": "gpt-6-luna-global",
+        "totalMs": 24105,
+        "retrievalMs": 0,
+        "feedsOk": 6,
+        "feedsTotal": 6,
+        "itemsKept": 24,
+        "quarantined": 0,
+        "attempts": 1,
+        "attemptErrors": [
+          []
+        ],
+        "modelCallMs": [
+          24104
+        ],
+        "responseIds": [
+          "resp_0475a4a983df86a9006ade9f9dc84881949b809ca0acdfa3ae"
+        ],
+        "gatewayCache": [
+          "REFRESH"
+        ],
+        "usage": {
+          "inputTokens": 4427,
+          "cachedInputTokens": 1141,
+          "outputTokens": 3305,
+          "reasoningTokens": 1415
+        },
+        "costUsd": 0.00199251,
+        "concepts": {
+          "finance": "ipo-timing",
+          "energy": "virtual-power-plants"
+        }
+      }
+    }
+  }
+}

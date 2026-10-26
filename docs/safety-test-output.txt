@@ -1,0 +1,8 @@
+ ✓ tests/safety.test.ts > layer 1 — source screening > quarantines both injection items and keeps the legitimate one
+ ✓ tests/safety.test.ts > layer 2 — prompt boundary > escapes '<' so an item cannot close <untrusted_sources> or fake a SYSTEM block
+ ✓ tests/safety.test.ts > layers 3–4 — even a fully hijacked model cannot touch learner state > the invented phishing 'source' is rejected; citations only resolve to retrieved URLs
+ ✓ tests/safety.test.ts > layers 3–4 — even a fully hijacked model cannot touch learner state > injected state fields are stripped by schema parsing
+ ✓ tests/safety.test.ts > layers 3–4 — even a fully hijacked model cannot touch learner state > delivering a hostile lesson — and completing it — moves state only by the normal rules
+ ✓ tests/safety.test.ts > spend controls > per-IP hourly limit and global daily cap
+ Test Files  1 passed (1)
+      Tests  6 passed (6)

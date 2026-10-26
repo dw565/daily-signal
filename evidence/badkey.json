@@ -1,0 +1,23 @@
+{
+  "runId": "mvoio4krnuyd",
+  "startedAt": "2026-10-26T00:26:49.515Z",
+  "result": "failed",
+  "error": "Model request failed: Portkey Error: Invalid API Key. Error Code: 03",
+  "model": "gpt-6-luna",
+  "totalMs": 635,
+  "retrievalMs": 214,
+  "feedsOk": 6,
+  "feedsTotal": 6,
+  "itemsKept": 24,
+  "quarantined": 0,
+  "attempts": 0,
+  "attemptErrors": [],
+  "usage": {
+    "inputTokens": null,
+    "cachedInputTokens": null,
+    "outputTokens": null,
+    "reasoningTokens": null
+  },
+  "costUsd": null,
+  "concepts": null
+}

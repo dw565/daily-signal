@@ -1,0 +1,76 @@
+{
+  "runId": "mvoiaiyl723b",
+  "date": "2026-10-25",
+  "startedAt": "2026-10-26T00:16:14.973Z",
+  "provider": "portkey",
+  "model": "gpt-6-luna-global",
+  "retrieval": {
+    "ms": 201,
+    "feeds": [
+      {
+        "publisher": "CNBC",
+        "ok": true,
+        "items": 6,
+        "ms": 200
+      },
+      {
+        "publisher": "Federal Reserve",
+        "ok": true,
+        "items": 1,
+        "ms": 78
+      },
+      {
+        "publisher": "BBC News",
+        "ok": true,
+        "items": 6,
+        "ms": 189
+      },
+      {
+        "publisher": "U.S. EIA",
+        "ok": true,
+        "items": 3,
+        "ms": 129
+      },
+      {
+        "publisher": "Utility Dive",
+        "ok": true,
+        "items": 6,
+        "ms": 107
+      },
+      {
+        "publisher": "Canary Media",
+        "ok": true,
+        "items": 6,
+        "ms": 108
+      }
+    ],
+    "itemsKept": 24
+  },
+  "attempts": [
+    {
+      "n": 1,
+      "latencyMs": 34766,
+      "usage": {
+        "inputTokens": 4305,
+        "cachedInputTokens": 0,
+        "outputTokens": 3838,
+        "reasoningTokens": 1748
+      },
+      "errors": []
+    }
+  ],
+  "result": "ok",
+  "totalMs": 34975,
+  "totalUsage": {
+    "inputTokens": 4305,
+    "cachedInputTokens": 0,
+    "outputTokens": 3838,
+    "reasoningTokens": 1748
+  },
+  "lessonId": "live-2026-10-25-mvoiaiyl723b",
+  "concepts": {
+    "finance": "ipo-timing",
+    "energy": "long-lead-procurement"
+  },
+  "citedSources": 4
+}

@@ -1,0 +1,168 @@
+{
+  "pricing": {
+    "model": "gpt-6-luna",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "retrieved": "2026-10-25",
+    "tier": "Standard",
+    "perMillion": {
+      "input": 0.1,
+      "cachedInput": 0.01,
+      "output": 0.5
+    }
+  },
+  "provider": "portkey",
+  "forceRefresh": true,
+  "runs": [
+    {
+      "runId": "mvoiqyjhi2za",
+      "startedAt": "2026-10-26T00:29:01.661Z",
+      "result": "ok",
+      "error": null,
+      "model": "gpt-6-luna-global",
+      "totalMs": 22996,
+      "retrievalMs": 45,
+      "feedsOk": 6,
+      "feedsTotal": 6,
+      "itemsKept": 24,
+      "quarantined": 0,
+      "attempts": 1,
+      "attemptErrors": [
+        []
+      ],
+      "modelCallMs": [
+        22948
+      ],
+      "responseIds": [
+        "resp_0245bf4eeadfc4c2006ade9ece36608197b2eda23b16ad885a"
+      ],
+      "gatewayCache": [
+        "REFRESH"
+      ],
+      "usage": {
+        "inputTokens": 4427,
+        "cachedInputTokens": 4424,
+        "outputTokens": 3557,
+        "reasoningTokens": 1552
+      },
+      "costUsd": 0.00182304,
+      "concepts": {
+        "finance": "revenue-run-rate",
+        "energy": "dispatchability"
+      },
+      "title": "From Revenue Pace to Grid Flexibility"
+    },
+    {
+      "runId": "mvoirgabh2lz",
+      "startedAt": "2026-10-26T00:29:24.659Z",
+      "result": "ok",
+      "error": null,
+      "model": "gpt-6-luna-global",
+      "totalMs": 26089,
+      "retrievalMs": 195,
+      "feedsOk": 6,
+      "feedsTotal": 6,
+      "itemsKept": 24,
+      "quarantined": 0,
+      "attempts": 1,
+      "attemptErrors": [
+        []
+      ],
+      "modelCallMs": [
+        25892
+      ],
+      "responseIds": [
+        "resp_09b0a98538c14afb006ade9ee5eba081908f40a96079b76f52"
+      ],
+      "gatewayCache": [
+        "REFRESH"
+      ],
+      "usage": {
+        "inputTokens": 4427,
+        "cachedInputTokens": 4424,
+        "outputTokens": 3717,
+        "reasoningTokens": 1506
+      },
+      "costUsd": 0.00190304,
+      "concepts": {
+        "finance": "ipo-timing",
+        "energy": "dispatchability"
+      },
+      "title": "Readiness, Windows, and Flexible Power"
+    },
+    {
+      "runId": "mvois0f27vg6",
+      "startedAt": "2026-10-26T00:29:50.750Z",
+      "result": "ok",
+      "error": null,
+      "model": "gpt-6-luna-global",
+      "totalMs": 27336,
+      "retrievalMs": 270,
+      "feedsOk": 6,
+      "feedsTotal": 6,
+      "itemsKept": 24,
+      "quarantined": 0,
+      "attempts": 1,
+      "attemptErrors": [
+        []
+      ],
+      "modelCallMs": [
+        27065
+      ],
+      "responseIds": [
+        "resp_0072ed92a64f7296006ade9effbd748195b4fa2f0629b7bbd1"
+      ],
+      "gatewayCache": [
+        "REFRESH"
+      ],
+      "usage": {
+        "inputTokens": 4427,
+        "cachedInputTokens": 4424,
+        "outputTokens": 3767,
+        "reasoningTokens": 1677
+      },
+      "costUsd": 0.00192804,
+      "concepts": {
+        "finance": "ipo-timing",
+        "energy": "dispatchability"
+      },
+      "title": "Choosing the Window—and Power on Call"
+    }
+  ],
+  "replayProbe": {
+    "runId": "mvoiqws8l7yn",
+    "startedAt": "2026-10-26T00:28:59.384Z",
+    "result": "ok",
+    "error": null,
+    "model": "gpt-6-luna-global",
+    "totalMs": 2276,
+    "retrievalMs": 1208,
+    "feedsOk": 6,
+    "feedsTotal": 6,
+    "itemsKept": 24,
+    "quarantined": 0,
+    "attempts": 1,
+    "attemptErrors": [
+      []
+    ],
+    "modelCallMs": [
+      1057
+    ],
+    "responseIds": [
+      "resp_0e6278dbc7470411006ade9c6efd8081959993e5c79f88a16a"
+    ],
+    "gatewayCache": [
+      "HIT"
+    ],
+    "usage": {
+      "inputTokens": 4427,
+      "cachedInputTokens": 0,
+      "outputTokens": 3220,
+      "reasoningTokens": 972
+    },
+    "costUsd": 0.0020526999999999998,
+    "concepts": {
+      "finance": "ipo-timing",
+      "energy": "dispatchability"
+    }
+  }
+}
